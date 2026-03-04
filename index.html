@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <title>My Todo List</title>
 
 <style>
@@ -175,7 +176,9 @@ button {
     <!-- Input Section -->
     <section class="input-section">
         <input type="text" placeholder="Enter a new task...">
-        <button class="add-btn">Add Task</button>
+        <button class="add-btn">
+             <i class="fa-solid fa-plus"></i>
+        </button>
     </section>
 
     <!-- Task List -->
@@ -212,8 +215,8 @@ addBtn.addEventListener("click", function () {
         <span>${taskText}</span>
     </div>
    <div class="btns">
-     <button class="edit-btn">✏️</button>
-    <button class="delete-btn">X</button>
+     <button class="edit-btn"> <i class="fa-solid fa-pen"></i></button>
+    <button class="delete-btn">   <i class="fa-solid fa-trash"></i></button>
     </div>
 `;
     taskList.appendChild(li);
